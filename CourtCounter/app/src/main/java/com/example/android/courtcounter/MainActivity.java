@@ -61,4 +61,12 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
 
     }
+
+    public void resetScores(View view)
+    {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayScoreForTeamA(scoreTeamA);
+        displayScoreForTeamB(scoreTeamB);
+    }
 }
